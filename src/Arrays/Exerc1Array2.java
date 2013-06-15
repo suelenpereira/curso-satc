@@ -14,8 +14,8 @@ public class Exerc1Array2 {
             
             int i=0;
             
-            while (i<days.length){
-                System.out.println(days[i]);                
+            while (i++<days.length){
+                System.out.println(days[i-1]);                
                 
             }
         }

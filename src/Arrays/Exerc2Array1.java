@@ -14,13 +14,25 @@ import java.io.InputStreamReader;
  */
 public class Exerc2Array1 {
       public static void main(String[] args){
-          
-          int[] numeros = new int[10];
+          BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
+          String mostratudo="";
+          int[] numeros = new int[3];
             for (int i=0; i < numeros.length; i++){   
-                numeros[i] = i;
-                
-                System.out .println(numeros[i]);                
+                /*numeros[i] = i;*/
+                System.out.print("Entre com o número: ");       
+                try{            
+                   numeros[i]=Integer.valueOf(dataIn.readLine());          
+                   if (i!=0){
+                       mostratudo=mostratudo+"-";
+                   }
+                   mostratudo=mostratudo+numeros[i];                
+                   } catch (IOException e) {
+                System.out.println("Error!");
+                System.out.println(numeros[i]); 
+                }                             
           }
+          System.out.println(mostratudo);                      
+            
       }
     
 }

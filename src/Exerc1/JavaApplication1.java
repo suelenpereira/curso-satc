@@ -12,7 +12,7 @@ public class JavaApplication1 {
       Double soma=0.;      
       for (int i=1;i<=3;i++){
         System.out.print("Entre com a nota: ");       
-        try{
+        try{            
             nota1=dataIn.readLine();          
            } catch (IOException e) {
         System.out.println("Error!");
@@ -27,6 +27,8 @@ public class JavaApplication1 {
           carinha=":-(";
       System.out.println("MEDIA: "+soma+"  "+carinha+"!");
       
+        
    }
+   
     
 }
